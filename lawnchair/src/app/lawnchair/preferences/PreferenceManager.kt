@@ -96,7 +96,7 @@ class PreferenceManager private constructor(private val context: Context) : Base
     val showStatusBar = BoolPref("pref_showStatusBar", true, recreate)
     val allAppsIconLabels = BoolPref("pref_allAppsIconLabels", true, reloadGrid)
     val searchAutoShowKeyboard = BoolPref("pref_searchAutoShowKeyboard", false)
-    val enableDebugMenu = BoolPref("pref_enableDebugMenu", false)
+    val enableDebugMenu = BoolPref("pref_enableDebugMenu", true)
     val folderPreviewBgOpacity = FloatPref("pref_folderPreviewBgOpacity", 1F, reloadIcons)
     val iconShape = ObjectPref(
         "pref_iconShape",
